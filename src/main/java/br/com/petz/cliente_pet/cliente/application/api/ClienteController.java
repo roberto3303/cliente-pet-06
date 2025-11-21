@@ -40,4 +40,10 @@ public class ClienteController implements ClienteAPI {
         return clienteDetalhadoResponse;
     }
 
+    @Override
+    public void deleteClienteAtravesId(UUID idCliente) {
+        log.info("[inicia] ClienteController - deleteClienteAtravesId");
+        log.info("[finaliza] ClienteController - deleteClienteAtravesId");
+    }
+
 }
