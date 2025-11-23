@@ -1,6 +1,7 @@
 package br.com.petz.cliente_pet.cliente.application.api;
 
 import br.com.petz.cliente_pet.cliente.application.service.ClienteService;
+import br.com.petz.cliente_pet.cliente.domain.Cliente;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.log4j.Log4j2;
 import org.springframework.web.bind.annotation.RestController;
@@ -44,6 +45,7 @@ public class ClienteController implements ClienteAPI {
     public void deleteClienteAtravesId(UUID idCliente) {
         log.info("[inicia] ClienteController - deleteClienteAtravesId");
         log.info("[idCliente] {}", idCliente);
+        clienteService.deletaClienteAtravesId(idCliente);
         log.info("[finaliza] ClienteController - deleteClienteAtravesId");
     }
 
