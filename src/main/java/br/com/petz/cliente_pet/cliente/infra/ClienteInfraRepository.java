@@ -20,7 +20,11 @@ public class ClienteInfraRepository implements ClienteRepository {
     @Override
     public Cliente salva(Cliente cliente) {
         log.info("[inicia] ClienteInfraRepository - salva");
-        clienteSpringDataJPARepository.save(cliente);
+        try {
+            clienteSpringDataJPARepository.save(cliente);
+        } catch (Exception e) {
+            throw APIException.build(HttpStatus.BAD_REQUEST,"CPF/email já cadastrado.",e);
+        }
         log.info("[finaliza] ClienteInfraRepository - salva");
         return cliente;
     }
