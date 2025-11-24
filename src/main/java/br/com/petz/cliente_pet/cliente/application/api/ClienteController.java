@@ -49,4 +49,10 @@ public class ClienteController implements ClienteAPI {
         log.info("[finaliza] ClienteController - deleteClienteAtravesId");
     }
 
+    @Override
+    public void patchAlteraCliente(UUID idCliente, ClienteAlteracaoRequest clienteAlteracaoRequest) {
+        log.info("[inicia] ClienteController - patchAlteraCliente");
+        log.info("[finaliza] ClienteController - patchAlteraCliente");
+    }
+
 }
