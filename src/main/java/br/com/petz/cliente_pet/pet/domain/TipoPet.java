@@ -1,4 +1,4 @@
-package br.com.petz.cliente_pet.Pet.domain;
+package br.com.petz.cliente_pet.pet.domain;
 
 public enum TipoPet {
     AVE, CACHORRO, COELHO, GATO, PEIXE, ROEDOR, REPTIL;

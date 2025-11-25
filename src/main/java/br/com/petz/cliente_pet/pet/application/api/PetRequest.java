@@ -1,8 +1,8 @@
-package br.com.petz.cliente_pet.Pet.application.api;
+package br.com.petz.cliente_pet.pet.application.api;
 
-import br.com.petz.cliente_pet.Pet.domain.Porte;
-import br.com.petz.cliente_pet.Pet.domain.SexoPet;
-import br.com.petz.cliente_pet.Pet.domain.TipoPet;
+import br.com.petz.cliente_pet.pet.domain.Porte;
+import br.com.petz.cliente_pet.pet.domain.SexoPet;
+import br.com.petz.cliente_pet.pet.domain.TipoPet;
 import jakarta.validation.constraints.NotBlank;
 import jakarta.validation.constraints.NotNull;
 import lombok.Value;
@@ -27,6 +27,5 @@ public class PetRequest {
     private LocalDate dataNascimento;
     private String rga;
     private Integer peso;
-
 
 }

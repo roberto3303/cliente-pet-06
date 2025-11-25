@@ -1,6 +1,6 @@
-package br.com.petz.cliente_pet.Pet.application.api;
+package br.com.petz.cliente_pet.pet.application.api;
 
-import br.com.petz.cliente_pet.Pet.application.service.PetService;
+import br.com.petz.cliente_pet.pet.application.service.PetService;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.log4j.Log4j2;
 import org.springframework.web.bind.annotation.RestController;
